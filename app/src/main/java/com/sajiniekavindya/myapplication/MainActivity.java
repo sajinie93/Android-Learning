@@ -14,10 +14,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     public void clickFunction(View view) {
-//        final EditText myTextField = (EditText) findViewById(R.id.editText);
-
-//        Log.i("Text Field value:",myTextField.getText().toString());
-//        Log.i("Hello","Sajinie");
 
         Intent intent = new Intent(this, SecondActivity.class);
 
@@ -26,10 +22,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickMe(View view) {
-        ImageView cat = (ImageView) findViewById(R.id.cat);
-        cat.setImageResource(R.drawable.cat2);
+        EditText usd = (EditText) findViewById(R.id.usd_id);
+        int value_1 = 0;
+        String value_2 = "";
+        try {
+        value_1 = Integer.parseInt(usd.getText().toString());
+        } catch(NumberFormatException e) {
+           System.out.println("parse value is not valid : " + e);
+        }
+
+        System.out.println(value_1);
+
+        value_2 = Integer.toString(value_1*150);
+        System.out.println(value_2);
+        EditText rupee = (EditText) findViewById(R.id.rupee_id);
+        rupee.setText(value_2);
 
     }
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
