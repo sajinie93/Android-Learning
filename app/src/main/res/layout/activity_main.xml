@@ -13,70 +13,24 @@
     android:layout_margin="10dp"
     android:backgroundTint="@color/colorPrimary">
 
-    <TextView
-        android:text="Rupee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView5"
-        android:textSize="16sp"
-        android:layout_marginTop="48dp"
-        android:layout_below="@+id/usernameLabel"
-        android:layout_alignLeft="@+id/usernameLabel"
-        android:layout_alignStart="@+id/usernameLabel" />
-
-    <TextView
-        android:text="USD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/usernameLabel"
-        android:textSize="16sp"
-        android:layout_marginTop="60dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginEnd="28dp"
-        android:layout_below="@+id/button3"
-        android:layout_toLeftOf="@+id/userName"
-        android:layout_toStartOf="@+id/userName" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/girl"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/girl1"
+        android:src="@drawable/girl" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/currency"
-        android:layout_below="@+id/cat"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp"
-        android:id="@+id/imageView2" />
-
-    <Button
-        android:text="Click me!"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="107dp"
-        android:id="@+id/button3"
-        android:background="@android:color/holo_orange_light"
-        android:onClick="clickMe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/girl2"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="14dp"
-        android:layout_marginEnd="14dp"
-        android:id="@+id/rupee_id" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:layout_above="@+id/textView5"
-        android:layout_alignRight="@+id/rupee_id"
-        android:layout_alignEnd="@+id/rupee_id"
-        android:id="@+id/usd_id" />
-
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/girl2"
+        android:alpha="0"
+        android:onClick="clickMe" />
 </RelativeLayout>
